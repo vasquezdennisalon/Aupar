@@ -1,0 +1,16 @@
+//
+//  ProductInteractor.swift
+//  Aupar
+//
+//  Created by Denis Vásquez on 5/16/19.
+//  Copyright © 2019 Denis Vásquez. All rights reserved.
+//
+
+import Foundation
+
+class ProductInteractor: ProductInteractorInputProtocol {
+    
+    var localDatamanager: ProductLocalDataManagerInputProtocol?
+    weak var presenter: ProductInteractorOutputProtocol?
+    var remoteDatamanager: ProductRemoteDataManagerInputProtocol?
+}
